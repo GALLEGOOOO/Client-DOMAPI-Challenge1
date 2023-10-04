@@ -91,7 +91,7 @@
         }
         if (photo) {
             photo.src = studentData.photoUrl;
-            photo.alt = " foto de " studentData.name + ;
+            photo.alt = " foto de " + studentData.name;
         }
     </script>
 </body>
