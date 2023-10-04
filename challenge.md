@@ -96,9 +96,6 @@
     </script>
 </body>
 </html>
-
-
-
 Create a script where you declare a variable with a student's data
 (name, age and photo URL). Next, get the elements from the HTML
 and fill them in with the student's information.
