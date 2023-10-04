@@ -78,20 +78,20 @@
         const studentData = {
             name: "Arnau Gallego",
             age: 19,
-            photoUrl: "https://escolapia.com/arnau-gallego.jpg"
+            photoUrl: "https://escolapiamataro.com/fp/daw2/arnau-gallego.jpg"
         };
-        const nameElement = document.querySelector('.student-name');
-        const ageElement = document.querySelector('.student-age');
-        const photoElement = document.querySelector('.student-photo');
-        if (nameElement) {
-            nameElement.textContent = studentData.name;
+        const name = document.querySelector('.student-name');
+        const age = document.querySelector('.student-age');
+        const photo = document.querySelector('.student-photo');
+        if (name) {
+            name.textContent = studentData.name;
         }
-        if (ageElement) {
-            ageElement.textContent = studentData.age;
+        if (age) {
+            age.textContent = studentData.age;
         }
-        if (photoElement) {
-            photoElement.src = studentData.photoUrl;
-            photoElement.alt = studentData.name + " foto";
+        if (photo) {
+            photo.src = studentData.photoUrl;
+            photo.alt = " foto de " studentData.name + ;
         }
     </script>
 </body>
