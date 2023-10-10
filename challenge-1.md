@@ -3,28 +3,18 @@
 1. Answer the following questions:
 
    - How would you select from JavaScript an element `p` that has the class `text` and also the class `important`?
-   **var element = document.querySelector("p.text.important");**
+   **const element = document.querySelector("p.text.important");**
 
    - How would you select from JavaScript a `button` element with class `button` and that is disabled?
-   **var buttonElement = document.querySelector("button.button[disabled]");**
+   **const buttonElement = document.querySelector("button.button[disabled]");**
 
    - How would you select from JavaScript all the `li` elements that are direct children of an `ul` element 3 with class `list`?
-
-   **const ulElement = document.querySelector('ul.list');**
-   **const liElements = ulElement.querySelectorAll('li');**
-
-   **liElements.forEach(li => {**
-     **console.log(li.textContent);**
-   **});**
+   **const ulElement = document.querySelector('ul.list > li');**
 
    - How would you select from JavaScript all the `input` elements that are descendants of a `form` element with class `form-new-item`, and that have a `type` attribute with a value `text`?
 
    **const formElement = document.querySelector('form.form-new-item');**
    **const textInputElements = formElement.querySelectorAll('input[type="text"]');**
-
-   **textInputElements.forEach(input => {**
-     **console.log(input.value);**
-   **});**
 
 
 
@@ -91,7 +81,7 @@
         }
         if (photo) {
             photo.src = studentData.photoUrl;
-            photo.alt = " foto de " studentData.name + ;
+            photo.alt = " foto de " + studentData.name;
         }
     </script>
 </body>
